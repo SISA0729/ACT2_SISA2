@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.act2_sisa2.HelloController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="Usuario" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="usuario" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label text="Contraseña" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <PasswordField fx:id="contraseña" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Button onAction="#onLoginButtonClick" text="Entrar a la Base de Datos" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label fx:id="mensaje" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>
